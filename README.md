@@ -1,5 +1,11 @@
 # BasicNavigation
 
+3/1/21
+Added bottom tabs: npm install @react-navigation/bottom-tabs
+Added vector icons: npm install react-native-vector-icons 
+List of vector icons: https://github.com/oblador/react-native-vector-icons/blob/master/glyphmaps/MaterialCommunityIcons.json
+
+2/26/21
 These are the only extra libraries I needed to install to keep it simple.
 Then just put all the files in your root folder of your project. The only file 
 that will be replaced is 'App.js'. Everything else just lives in the project next to 

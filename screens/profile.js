@@ -2,13 +2,13 @@ import * as React from 'react';
 import { View, Text, TouchableOpacity, } from 'react-native';
 import { globalStyles } from '../styles/global';
 
-export default function Settings(props) {
+export default function ProfileScreen(props) {
   const { navigation } = props; // Always need access to navigation
     return (
       <View style={globalStyles.conatainer}>
-        <Text style={globalStyles.titleText}>Settings Screen</Text>
+        <Text style={globalStyles.titleText}>Profile Screen</Text>
 
-        <TouchableOpacity
+        {/* <TouchableOpacity
           style={globalStyles.buttonContainer}
         // Using 'popToTop' method to return to the top of the stack, 
         // which is the Home screen. This way we don't have to click back through 
@@ -16,7 +16,7 @@ export default function Settings(props) {
           onPress={() => navigation.popToTop()}
         >
           <Text style={globalStyles.buttonText}>Go to home</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
         
       </View>
     );

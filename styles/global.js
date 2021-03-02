@@ -33,6 +33,7 @@ export const globalStyles = StyleSheet.create({
         backgroundColor: '#101010',
         margin: 10,
         padding: 10,
+        justifyContent: 'center',
         alignItems: 'center'
       },
       cardText: {

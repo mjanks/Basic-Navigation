@@ -15,7 +15,7 @@ export default function HomeScreen(props) {
       <View style={globalStyles.conatainer}>
         <Text style={globalStyles.titleText}>Home Screen</Text>
         
-        <TouchableOpacity
+        {/* <TouchableOpacity
           style={globalStyles.buttonContainer}
           
           // You can pass parameters to a route by putting the params in an object as 
@@ -23,7 +23,7 @@ export default function HomeScreen(props) {
           onPress={() => navigation.navigate('Details', { item: character })}
         >
           <Text style={globalStyles.buttonText}>Who is {character.name}</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
     );
   }
