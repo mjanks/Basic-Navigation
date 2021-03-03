@@ -1,15 +1,13 @@
 import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import ProfileScreen from "../screens/profile";
-import TripsScreen from "../screens/trips";
 import InboxScreen from "../screens/inbox";
 
-const InboxStack = createStackNavigator();
+const IboxStack = createStackNavigator();
 
-export default function TripsStack() {
+export default function InboxStack() {
     return (
-      <InboxStack.Navigator 
+      <IboxStack.Navigator 
           initialRouteName='Inbox'
           screenOptions={{
             gestureEnabled: true,
@@ -24,12 +22,12 @@ export default function TripsStack() {
           }}
           headerMode='none'
         >
-          <InboxStack.Screen 
+          <IboxStack.Screen 
             name="Inbox" 
             component={InboxScreen} 
-            options={{ title: 'Trips' }}
+            options={{ title: 'Inbox' }}
           />
   
-        </InboxStack.Navigator>
+        </IboxStack.Navigator>
     );
   }
