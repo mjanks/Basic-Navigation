@@ -6,6 +6,8 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import HomeStack from "./homeStack";
 import SavedStack from "./savedStack";
 import ProfileStack from "./profileStack";
+import TripsStack from "./tripsStack";
+import InboxStack from "./inboxStack";
 
 const Tab = createBottomTabNavigator();
 
@@ -44,19 +46,46 @@ function MainStackNav() {
               />
             ),
           }} />
-        <Tab.Screen
-          name="ProfStack"
-          component={ProfileStack}
-          options={{
-            tabBarLabel: 'Profile',
-            tabBarIcon: ({ color, size }) => (
-              <MaterialCommunityIcons
-                name="account"
-                color={color}
-                size={size}
-              />
-            ),
-          }} />
+          <Tab.Screen
+            name="TripsStack"
+            component={TripsStack}
+            options={{
+              tabBarLabel: 'Trips',
+              tabBarIcon: ({ color, size }) => (
+                <MaterialCommunityIcons
+                  name="bag-personal"
+                  color={color}
+                  size={size}
+                />
+              ),
+            }} />
+          <Tab.Screen
+            name="InboxStack"
+            component={InboxStack}
+            options={{
+              tabBarLabel: 'Inbox',
+              tabBarIcon: ({ color, size }) => (
+                <MaterialCommunityIcons
+                  name="message-text"
+                  color={color}
+                  size={size}
+                />
+              ),
+            }} />
+            <Tab.Screen
+            name="ProfStack"
+            component={ProfileStack}
+            options={{
+              tabBarLabel: 'Profile',
+              tabBarIcon: ({ color, size }) => (
+                <MaterialCommunityIcons
+                  name="account"
+                  color={color}
+                  size={size}
+                />
+              ),
+            }} />
+
       </Tab.Navigator>
       
     </NavigationContainer>

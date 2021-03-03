@@ -6,7 +6,7 @@ export const globalStyles = StyleSheet.create({
         padding: 20,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'coral',
+        backgroundColor: '#fbdddd',
     },
     titleText: {
         fontSize: 18,
@@ -30,7 +30,7 @@ export const globalStyles = StyleSheet.create({
         width: 350,
         height: 100,
         borderRadius: 10,
-        backgroundColor: '#101010',
+        backgroundColor: '#ffffff',
         margin: 10,
         padding: 10,
         justifyContent: 'center',
@@ -38,7 +38,7 @@ export const globalStyles = StyleSheet.create({
       },
       cardText: {
         fontSize: 18,
-        color: '#ffd700',
+        color: 'blue',
         marginBottom: 5
       },
 });
